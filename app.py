@@ -122,12 +122,12 @@ def load_assets():
         device = torch.device("cpu")
     tokenizer = PolymerSmilesTokenizer.from_pretrained("roberta-base", max_len=base_config['blocksize'])
     
-    # 1. Load Multi-task Model
+    # 1. Load Multi-task Model (v1.1 Tg-Boost)
     model_multi = None
     scaler_multi = None
     tcols_multi = []
-    ckpt_multi_path = os.path.join(curr_dir, 'ckpt', 'model_multi_best.pt')
-    scaler_multi_path = os.path.join(curr_dir, 'ckpt', 'scaler_multi.joblib')
+    ckpt_multi_path = os.path.join(curr_dir, 'ckpt', 'model_multi_boost_best.pt')
+    scaler_multi_path = os.path.join(curr_dir, 'ckpt', 'scaler_multi_boost.joblib')
     
     if os.path.exists(ckpt_multi_path) and os.path.exists(scaler_multi_path):
         checkpoint_multi = torch.load(ckpt_multi_path, map_location='cpu')
