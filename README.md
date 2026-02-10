@@ -128,12 +128,15 @@ PE-II: ["Database Creation, Visualization, and Statistical Learning for Polymer 
 ### 체크포인트 (Checkpoints)
 
 > [!WARNING]
-> **대용량 파일 제한 안내:** GitHub의 파일 용량 제한(100MB)으로 인해 학습된 모델 가중치 파일(`*.pt`, `model.safetensors`, `pytorch_model.bin`)은 Git 추적에서 제외되었습니다. 
+> **대용량 파일 제한 안내:** GitHub의 파일 용량 제한(100MB)으로 인해 학습된 모델 가중치 파일 및 학습용 데이터셋은 Git 추적에서 제외되었습니다. 
 
-**모델 파일을 구하는 방법:**
+**모델 및 데이터 다운로드:**
+*   **[Google Drive 다운로드 링크](https://drive.google.com/drive/folders/1r4hyFSQbKZQqfF9dAaz-eECl9vXwhysc?usp=sharing)**
+*   위 링크에서 `ckpt/` 폴더와 `data/` 폴더를 다운로드하여 프로젝트 루트 경로에 위치시켜 주세요.
+
+**모델 파일을 직접 생성하는 방법:**
 1.  **직접 학습**: `Pretrain.py`, `run_finetune.sh`, `run_tg_boost.sh`를 실행하여 로컬에서 모델을 생성할 수 있습니다.
-2.  **데이터 복구**: `utils/prepare_all_data.py`를 실행하여 데이터셋을 준비한 후 학습을 시작하십시오.
-3.  **외부 저장소**: (별도의 클라우드 다운로드 링크가 제공되는 경우 해당 링크를 확인하십시오.)
+2.  **데이터 전처리**: `utils/prepare_all_data.py`를 실행하여 데이터셋을 준비한 후 학습을 시작하십시오.
 
 ### [신규] 프로젝트 구조
 - **`app.py`**: 통합 6개 물성 예측 Streamlit 대시보드.
@@ -339,12 +342,15 @@ Key datasets provided by the user for project enhancement:
 ### Checkpoints
 
 > [!WARNING]
-> **Large File Restriction:** Due to GitHub's file size limit (100MB), trained model weight files (`*.pt`, `model.safetensors`, `pytorch_model.bin`) are excluded from Git tracking.
+> **Large File Restriction:** Due to GitHub's file size limit (100MB), trained model weight files and core datasets are excluded from Git tracking.
 
-**How to obtain model files:**
+**Download Models & Data:**
+*   **[Google Drive Download Link](https://drive.google.com/drive/folders/1r4hyFSQbKZQqfF9dAaz-eECl9vXwhysc?usp=sharing)**
+*   Please download the `ckpt/` and `data/` folders from the link above and place them in the project root directory.
+
+**How to generate model files manually:**
 1.  **Self-Training:** You can generate the models locally by running `Pretrain.py`, `run_finetune.sh`, or `run_tg_boost.sh`.
 2.  **Data Preparation:** Run `utils/prepare_all_data.py` to prepare the datasets before starting the training.
-3.  **External Storage:** (If a separate cloud download link is provided, please check that link.)
 
 ### [NEW] Project Structure
 - **`app.py`**: Unified 6-Property Streamlit Dashboard.
