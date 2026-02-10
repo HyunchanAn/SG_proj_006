@@ -28,4 +28,4 @@ PI1M.csv
 PI1M_v2.csv
 
 # Ignore data directory
-data/
+data/ckpt/
