@@ -27,8 +27,8 @@
 ```
 
 > [!TIP]
-> **MacOS (Apple Silicon) 지원 안내:**
-> 본 프로젝트는 M1/M2/M3 등 Apple Silicon 칩셋의 **MPS (Metal Performance Shaders)** 가속을 완벽하게 지원합니다. 별도의 설정 없이 자동으로 GPU를 감지하여 사용합니다.
+> MacOS (Apple Silicon) 지원 안내:
+> 본 프로젝트는 M1/M2/M3 등 Apple Silicon 칩셋의 MPS (Metal Performance Shaders) 가속을 완벽하게 지원합니다. 별도의 설정 없이 자동으로 GPU를 감지하여 사용합니다.
 
 ## 시작하기
 
@@ -252,7 +252,7 @@ This is the official implementation of <strong><em>TransPolymer</em></strong>: [
 
 ## Getting Started
 
-### 🔥 Quick Start (MacOS/Apple Silicon Demo)
+### Quick Start (MacOS/Apple Silicon Demo)
 
 For a quick setup on a clean MacBook (Apple Silicon), use the provided **one-click setup script**.
 Run the following command in your terminal to automatically create a virtual environment and install all dependencies.
